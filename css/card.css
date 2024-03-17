@@ -7,7 +7,6 @@
     margin: 120px;
     padding: 50px;
     min-width: 600px;
-    min-height: 300px;
     width: 70%;
     height: auto;
 
@@ -35,5 +34,41 @@
 
 .card_content{
     display: flex;
-    
+    margin: 10px;
+}
+
+.img-right{
+    margin-left: 20px; display: flex; flex-direction: column; justify-content: space-between;
+}
+
+.framework{
+    width: 60px;
+    height: 60px;
+}
+
+.bar-cover{
+    display: flex;
+    text-align: center;
+    margin-top: 5px;
+    width: 400px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid;
+    align-items: center;
+    padding: 5px;
+}
+
+.bar-fill{
+    height: 90%;
+    border-radius: 8px;
+}
+
+#spring{
+    background-image: linear-gradient(to right, #00b09b, #96c93d);
+    width: 80%;
+}
+
+#django{
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+    width: 40%;
 }
