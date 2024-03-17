@@ -1,0 +1,39 @@
+.card_wrap{
+    border-radius: 15px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+
+    margin: 120px;
+    padding: 50px;
+    min-width: 600px;
+    min-height: 300px;
+    width: 70%;
+    height: auto;
+
+    background: rgba( 176, 174, 174, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.card_wrap:hover{
+    box-shadow: 0 8px 32px 0 rgba(136, 139, 182, 0.8)
+}
+
+
+.card_title{
+    font-family: Poppins, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid;
+    border-color: rgba( 176, 174, 174, 0.35 );
+}
+
+
+.card_content{
+    display: flex;
+    
+}

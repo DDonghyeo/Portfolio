@@ -1,0 +1,114 @@
+/* header */
+:root {
+    --primary: #b0e1e6;
+    --background: black;
+    --nav-background: #141318;
+    --nav-item-bg-hover: #79797920;
+    --navbar-height: 4rem;
+    --text-gray: #252525;
+    --text-white: white;
+    --bg: #171717;
+    --text-color: #fff;
+    --accent: cyan;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--background);
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1037366/planet2.png");
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+nav {
+    background: var(--nav-background);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: var(--navbar-height);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+
+/* buton */
+.button {
+    display: inline-block;
+    max-width: 20rem;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+}
+
+.shape {
+    fill: transparent;
+    stroke: var(--accent);
+    stroke-dasharray: 120 500;
+    stroke-dashoffset: -454;
+    stroke-width: 8px;
+    transition:
+        stroke-width 0.9s,
+        stroke-dashoffset 0.9s,
+        stroke-dasharray 0.9s;
+}
+
+.text {
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 0.3rem;
+    color: var(--text-color);
+    top: -3rem;
+    position: relative;
+    pointer-events: none;
+}
+
+.shape:hover {
+    stroke-width: 3px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+    background-color: var(--nav-background);
+}
+
+
+
+
+
+
+
+
+/* body */
+@font-face {
+    font-family: 'Orbit-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Orbit-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{
+    font-family: 'Orbit-Regular';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 120px;
+}
+
+#profile{
+    width: 120px;
+    border: 1px solid;
+    margin: 10px;
+}
