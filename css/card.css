@@ -72,3 +72,12 @@
     background-image: linear-gradient(to right, #8360c3, #2ebf91);
     width: 40%;
 }
+
+.tech{
+    height: 20px;
+}
+
+.content_title{
+    font-weight: 100;
+    margin-top: 20px;
+}
