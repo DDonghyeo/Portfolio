@@ -1,0 +1,98 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+}
+
+.modal_content{
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    background-color: #161819;
+    line-height: 10px;
+    text-align: center;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 900px;
+    margin:0;
+    position:fixed;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    height: 70%;
+}
+
+.close {
+    display: flex;
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50px;
+    background-color: #141414;
+    color: #fff;
+    float: right;
+    font-size: 2rem;
+    font-weight: lighter;
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_header{
+    width: 100%;
+    height: 70px;
+    background-size: cover;
+    box-shadow: inset 0px -130px 80px #555555
+}
+
+.modal_desc{
+    margin: 0;
+    background-color: #161819;
+    color: white;
+    height: 200px;
+    text-align: left;
+}
+
+.desc_name{
+    font-size: 2rem;
+    font-weight: 700;
+    height: 20px;
+    margin-left: 20px;
+}
+
+.desc_inf{
+    font-size: 1rem;
+    font-weight: 400;
+    height: auto;
+    margin: 20px;
+    line-height: 30px;
+}
+
+
+#waither_title{
+    background-image: url('../img/waither_banner.jpg');
+}
+
+#smunity_title{
+    background-image: url('../img/smunity_back.jpg');
+}
+
+#tools_title{
+    background-image: url('../img/random.jpg');
+}

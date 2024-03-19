@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/modal.css">
     <script src="https://kit.fontawesome.com/6f6e87c662.js" crossorigin="anonymous"></script>
 
     <title>DONGFOLIO</title>
@@ -32,7 +33,7 @@
             </svg>
         </a>
 
-        <a class="button" href="#" >
+        <a class="button" href="/products.html" >
             <svg height="60" width="300" xmlns="http://www.w3.org/2000/svg">
                 <rect class="shape" height="60" width="300" />
                 <div class="text">Products</div>
@@ -52,14 +53,14 @@
                 <img src="img/201910926.jpg" id="profile" alt="">
                 <div class="img-right">
                     <h2>김동현</h2>
-                    <h3><i class="fa-solid fa-graduation-cap"></i>  상명대학교, 서울</h3>
+                    <h3><i class="fa-solid fa-graduation-cap"></i>  상명대학교 서울캠퍼스</h3>
                     <h3><i class="fa-solid fa-book"></i>&nbsp;   컴퓨터과학전공</h3>
                     <h3><i class="fa-solid fa-cake-candles"></i>&nbsp;  2000.03.30</h3>
                 </div>
             </div>
             <div class="card_content">
                 안녕하세요. 저는 주변 문제들을 직접 해결하는 것을 좋아하는 개발자입니다. <br>
-                백엔드 개발자를 희망하고 있습니다.
+                ...
             </div>
         </div>
 
@@ -71,7 +72,7 @@
                 <div class="img-right">
                     Spring Boot
                     <div class="bar-cover">
-                        <div id="spring" class="bar-fill"></div>
+                        <div id="spring" class="bar-fill">70%</div>
                     </div>
                 </div>
             </div>
@@ -81,10 +82,11 @@
                 <div class="img-right">
                     Django
                     <div class="bar-cover">
-                        <div id="django" class="bar-fill"></div>
+                        <div id="django" class="bar-fill">40%</div>
                     </div>
                 </div>
             </div>
+            
         </div>
 
 
@@ -116,7 +118,6 @@
             <div class="card_content tech">
                 <img src="https://img.shields.io/badge/Apache-D22128?style=round-square&logo=Apache&logoColor=white"/>&nbsp;
                 <img src="https://img.shields.io/badge/NGINX-009639?style=round-square&logo=NGINX&logoColor=white"/>&nbsp;
-                <img src="https://img.shields.io/badge/Gunicorn-499848?style=round-square&logo=Gunicorn&logoColor=white"/>&nbsp;
             </div>
 
             <h2 class="content_title">Tools</h2>
@@ -136,12 +137,252 @@
 
         </div>
 
+            <!-- Projects -->
+        <div class="card_wrap">
+            <div class="card_title">Projects</div>
+            <div class="card_content">
+
+                <!-- Smunity -->
+                <div class="card" onclick="openm('smunity')">
+                    <div class="card__side">
+                        <img src="img/smunity-front.jpg" alt="스뮤니티">
+                    </div>
+                    <div class="card__side card__side--back">
+                        <img src="img/smunity-back.jpg" alt="스뮤니티">
+                        <p>상명대학교 졸업요건 검사 페이지, Smunity</p>
+                    </div>
+                </div>
+
+                <!-- Waither -->
+                <div class="card" onclick="openm('waither')">
+                    <div class="card__side">
+                        <img src="img/waither-front.jpg" alt="Waither">
+                    </div>
+                    <div class="card__side card__side--back">
+                        <img src="img/waither-back.jpg" alt="Waither">
+                        <p>사용자 맞춤 기상 비서, Waither</p>
+                    </div>
+                </div>
+
+                <!-- Deploy -->
+                <div class="card" onclick="openm('deploy')">
+                    <div class="card__side">
+                        <img src="img/deploysurfing-front.jpg" alt="Deploy Surfing">
+                    </div>
+                    <div class="card__side card__side--back">
+                        <img src="img/deploysurfing-back.jpg" alt="Deploy Surfing">
+                        <p>자동 배포 로직화 사이트, Deploy Surfing</p>
+                    </div>
+                </div>
+
+                <!-- Reading -->
+                <div class="card" onclick="openm('reading')">
+                    <div class="card__side">
+                        <img src="img/reading-front.jpg" alt="Reading">
+                    </div>
+                    <div class="card__side card__side--back">
+                        <img src="img/reading-back.jpg" alt="Reading">
+                        <p>[EBS 책맹인류 외주] 독서 동기 검사 페이지</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
+
+    <!-- modal -->
+    <!-- waither -->
+    <div id="waither" class="modal">
+        <div class="modal_content">
+            <span class="close" onclick="modal_close(this)" close="waither">&times;</span>
+            <div class="modal_div">
+                <div class="modal_header"></div>
+                <div class="modal_desc">
+                    <div class="desc_inf">
+                        <h2 class="card_title">나만의 기상비서, Waither</h2>
+                        <div>Waither는 사용자 개인 맞춤 날씨 알림 정보 서비스입니다. </div>
+
+                        <div><i class="fa-brands fa-github"> </i>  Github :  <a href="https://github.com/WaitherTeam/Waither-BE">Link</a></div>
+                        <div><i class="fa-solid fa-link"></i> Link : 개발중입니다..</div>
+                        <div><i class="fa-solid fa-calendar-days"></i> 2023.11 ~ </div>
+
+                        <div class="modal_card_background">
+                            <div class="modal_gallery">
+                                <div class="modal_card">
+                                    <figure><img src="img/waither/waither_1.jpg"></figure>
+                                </div>
+                                <div class="modal_card">
+                                    <figure><img src="img/waither/waither_2.jpg"></figure>
+                                </div>
+                                <div class="modal_card">
+                                    <figure><img src="img/waither/waither_3.jpg"></figure>
+                                </div>
+                                <div class="modal_card">
+                                    <figure><img src="img/waither/waither_4.jpg"></figure>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br><br>
+                        
+
+                        <br><br>
+                        <div>
+                            - 현재 개발 중입니다. <br>
+                            - PM, BackEnd(Spring)으로 참여했습니다. <br>
+                            - Spring Cloud 환경 구축, 사용자 알림 서비스 구현을 담당했습니다.<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- smunity -->
+    <div id="smunity" class="modal">
+        <div class="modal_content">
+            <span class="close" onclick="modal_close(this)" close="smunity">&times;</span>
+            <div class="modal_div">
+                <div class="modal_header"></div>
+                <div class="modal_desc">
+                    <div class="desc_inf">
+                        <h2 class="card_title">상명대학교 졸업요건 검사 사이트, Smunity</h2>
+                        <div>상명대학교 재학생을 위한 졸업요건 검사 사이트입니다.</div>
+
+                        <div><i class="fa-brands fa-github"> </i>  Github :  <a href="https://github.com/orgs/smu-nity/repositories">Link</a></div>
+                        <div><i class="fa-solid fa-link"></i> Link : <a href="https://smunity.co.kr/">Link</a></div>
+                        <div><i class="fa-solid fa-calendar-days"></i> 2023.01 ~ </div>
+
+                        <div class="modal_card_background">
+                            <div class="modal_gallery">
+                                <div class="modal_card">
+                                    <figure><img src="img/smunity/smunity_1.jpg"></figure>
+                                </div>
+                                <div class="modal_card">
+                                    <figure><img src="img/smunity/smunity_2.jpg"></figure>
+                                </div>
+                                <div class="modal_card">
+                                    <figure><img src="img/smunity/smunity_3.jpg"></figure>
+                                </div>
+                                <div class="modal_card">
+                                    <figure><img src="img/smunity/smunity_4.jpg"></figure>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        
+
+                        <br><br>
+                        <div>
+                            - 사용자 졸업 요건 검사 결과 페이지를 제작했습니다. <br>
+                            - 사용자 졸업 요건 검사 로직을 구현했습니다.<br>
+                            - 총 회원수 3,000명을 달성했습니다.<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- deploy -->
+    <div id="deploy" class="modal">
+        <div class="modal_content">
+            <span class="close" onclick="modal_close(this)" close="deploy">&times;</span>
+            <div class="modal_div">
+                <div class="modal_header"></div>
+                <div class="modal_desc">
+                    <div class="desc_inf">
+                        <h2 class="card_title">자동 배포 로직화 사이트, Deploy Surfing</h2>
+                        <div>배포를 어려워하는 사람을 위해 만든 사이트 입니다. 자신의 앱을 추가하고, 깃허브, AWS, Docker 권한 토큰을 등록하면 자동으로 배포가 진행되며, 배포 과정의 로직을 모두 살펴볼 수 있습니다. 앱의 구동 정지/시작/삭제가 가능합니다.</div>
+                        <div><i class="fa-brands fa-github"> </i>  Github :  <a href="https://github.com/DDonghyeo/DeploySurfing">Link</a></div>
+                        <div><i class="fa-solid fa-link"></i> Link : 개발중입니다..</div>
+                        <div><i class="fa-solid fa-calendar-days"></i> 2024.03 ~ </div>
+                        <div class="modal_card_background">
+                            <div class="modal_gallery">
+                                <div class="modal_card">
+                                    <figure><img src="img/deploy/deploy_1.jpg"></figure>
+                                </div>
+                                <div class="modal_card">
+                                    <figure><img src="img/deploy/deploy_2.jpg"></figure>
+                                </div>
+                                <div class="modal_card">
+                                    <figure><img src="img/deploy/deploy_3.jpg"></figure>
+                                </div>
+                                <div class="modal_card">
+                                    <figure><img src="img/deploy/deploy_4.jpg"></figure>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        
+
+                        <br><br>
+                        <div>
+                            - 기획, 디자인, 백엔드를 진행했습니다.<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- reading -->
+    <div id="reading" class="modal">
+        <div class="modal_content">
+            <span class="close" onclick="modal_close(this)" close="reading">&times;</span>
+            <div class="modal_div">
+                <div class="modal_header"></div>
+                <div class="modal_desc">
+                    <div class="desc_inf">
+                        <h2 class="card_title">독서 동기 검사 사이트</h2>
+                        <div>EBS에서 진행하는 '책맹인류' 다큐 프로그램의 지원 서비스로, 외주를 받아 제작한 독서 동기를 검사할 수 있는 사이트입니다.</div>
+                        <br>
+                        <div><i class="fa-brands fa-github"> </i>  Github :  저작권 상 비공개</div>
+                        <div><i class="fa-solid fa-link"></i> Link : 서비스 종료 상태입니다.</div>
+                        <div><i class="fa-solid fa-calendar-days"></i> 2023.08 ~ 2023.12</div>
+
+                        <div class="modal_card_background">
+                            <div class="modal_gallery">
+                                <div class="modal_card">
+                                    <figure><img src="img/reading/reading_1.jpg"></figure>
+                                </div>
+                                <div class="modal_card">
+                                    <figure><img src="img/reading/reading_2.jpg"></figure>
+                                </div>
+                                <div class="modal_card">
+                                    <figure><img src="img/reading/reading_3.jpg"></figure>
+                                </div>
+                                <div class="modal_card">
+                                    <figure><img src="img/reading/reading_4.jpg"></figure>
+                                </div>
+                                <div class="modal_card">
+                                    <figure><img src="img/reading/reading_5.jpg"></figure>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <br><br>
+                        <div>
+                            - Django, uwsgi, gunicorn, nginx를 이용하여 개발했습니다.<br>
+                            - 사이트 오픈 초기 사용자를 대비하여 초반 단계 scale-up을 진행했습니다.<br>
+                            - Apache Jmeter 툴을 이용해 NGINX의 로드밸런싱 테스트를 통해 트래픽에 대비했습니다. <a href="https://ddonghyeo.tistory.com/19">블로그 글</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
     
 
     
 </body>
-<script src="js/index.js"></script>
+<script src="js/modal.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r118/three.min.js'></script><script  src="./script.js"></script>
 <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1037366/three.js'></script>
 <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1037366/CanvasRenderer.js'></script>
